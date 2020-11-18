@@ -6,9 +6,12 @@ In this project, we build and optimize an Azure ML pipeline using the Python SDK
 This model is then compared to an Azure AutoML run.
 
 ## Summary
-**In 1-2 sentences, explain the problem statement: e.g "This dataset contains data about... we seek to predict..."**
+<!-- ![alt text](http://url/to/img.png) -->
 
-**In 1-2 sentences, explain the solution: e.g. "The best performing model was a ..."**
+The data is related with direct marketing campaigns of a Portuguese banking institution. The marketing campaigns were based on phone calls. Often, more than one contact to the same client was required, in order to access if the product (bank term deposit) would be ('yes') or not ('no') subscribed.
+
+<br>
+The best performing model on the data using Azure's AutoML turned out to be VotingEnsemble classifier. It is based on the concept of ensembling machine learning that uses the idea of considering outputs from a variety of models, and then use them collectively to give a final result. With Azure's AutoML, we received an accuracy score of 0.9163 within just 5 iterations. 
 
 ## Scikit-learn Pipeline
 **Explain the pipeline architecture, including data, hyperparameter tuning, and classification algorithm.**
